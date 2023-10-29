@@ -1,0 +1,121 @@
+#all{
+    background:#ffddff;
+    filter:hue-rotate(120deg);
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background:radial-gradient(circle, #ffddff , #ddccdd, #ffddff);
+ }
+ 
+ #inp{
+     position:absolute;
+     top:5%;
+     left:5%;
+     width:60%;
+     height:10%;
+     outline:none;
+     text-align:center;
+     font-size:120%;
+     box-shadow:0 0 2vmin 2px purple;
+     border:1vmin solid #ddaadd;
+     background:#ffeeff;
+     border-radius:100vmin;
+ }
+ 
+ #send{
+     position:absolute;
+     right:5%;
+     top:5%;
+     padding-left:5%;
+     padding-right:5%;
+     border:1vmin solid #ddaadd;
+     background-color:purple;
+     text-align:center;
+     border-radius:50vmin;
+     box-shadow:0 0 2vmin 2px purple;
+     transition:transform 0.15s;
+ }
+ 
+ #send:active{
+     transform:scale(0.9);
+ }
+ 
+ #send p{
+     line-height:150%;
+     font-size:4vmin;
+     color:#ffddff;
+ }
+ 
+ #messages{
+     position:absolute;
+     top:25%;
+     left:5%;
+     width:90%;
+ }
+ 
+ .message{
+     margin-top:5%;
+     margin-bottom:5%;
+     background:linear-gradient(135deg, purple 0%, purple 15%, #ffefff 15%, #ffefff 85%, purple 85%, purple 100%);
+     border-left:1vmin solid purple;
+     border-right:1vmin solid purple;
+     border-radius:50vmin;
+     color:black;
+     padding:2%;
+     font-size:100%;
+     display:inline-block;
+     width:90%;
+     text-align:center;
+ }
+ 
+ span{
+     color:red;
+     font-weight:bolder;
+ }
+ 
+ #col{
+     background:rgba(250 , 250 , 250 , 0.5);
+     bottom:0;
+     position:absolute;
+     right:-66%;
+     width:90%;
+     padding:2%;
+     transition:all 1s;
+     animation-iteration-count:infinite;
+     animation-duration:3s;
+     animation-name:color;
+ }
+ 
+ #col #inp2{
+     position:absolute;
+     width:60%;
+     right:5%;
+ }
+ 
+ #col #inp3{
+     position:absolute;
+     right:1%;
+ }
+ 
+ @keyframes color{
+     30%{
+         color:red;
+     }
+     50%{
+         color:green;
+     }
+     75%{
+         color:blue;
+     }
+ }
+ 
+ #col label{
+     font-weight:bolder;
+ }
+ 
+ #col:hover {
+     right:0%;
+ }
+ 
